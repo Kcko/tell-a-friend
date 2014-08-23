@@ -1,0 +1,74 @@
+#tell-a-friend-button
+{
+   height: 20px;
+   background: #486bb1;
+   display: inline-block;
+   overflow: hidden;
+   padding: 0px 5px;
+   margin: 0px 0px -9px 0px;
+   border-radius: 2px;
+   line-height: 20px;
+   font-size: 12px;
+   text-align: center;
+   cursor: pointer;
+}
+#tell-a-friend-button:hover
+{
+   background: #567bc8;
+}
+#tell-a-friend
+{
+    display: none;
+}
+#tell-a-friend .text-input
+{
+    border-radius: 5px;
+    border: 1px solid #919191;
+    width: 173px;
+    margin-bottom: 20px;
+    padding: 0px 5px;
+}
+#tell-a-friend .submit
+{
+    border-radius: 5px;
+    border: none;
+    background-color: buttonface;
+}
+#tell-a-friend .submit:hover,
+.ui-dialog-titlebar-close:hover
+{
+    background-color: #b0b0b0;
+}
+#tell-a-friend p
+{
+    padding: 10px 0px 10px 0px;
+}
+
+#tell-a-friend p.success
+{
+    text-align: center;
+    margin-top: 30px;
+}
+.ui-dialog{
+    background: #ffffff;
+    border: 2px solid #919191;
+    border-radius: 5px;
+    padding: 20px;
+}
+.ui-dialog-titlebar{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.ui-dialog-titlebar-close
+{
+    float: right;
+    border-radius: 5px;
+    border: none;
+    padding: 0px 5px;
+}
+.ui-dialog-titlebar-close::before
+{
+    content: "zavřít";
+    font-weight: normal;
+    font-size: 0.8em;
+}

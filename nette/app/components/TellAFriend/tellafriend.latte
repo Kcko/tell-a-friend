@@ -1,0 +1,15 @@
+<span id="tell-a-friend-button">Poslat odkaz e-mailem</span>
+<div id="tell-a-friend" title="Poslat odkaz e-mailem">
+    {snippet tellafriend}
+	    {if !$send}
+		    <p>Informujte své přátele nebo známe o této stránce a pošlete jim e-mail s odkazem!</p>
+		    {form sendMailForm, class => ajax}
+		    	{input mailto, class=>text-input}
+		    	{input mailfrom, class=>text-input}
+		    	{input send, class=>submit}
+		    {/form}
+	    {else}
+	    	<p class="success">E-mail s Vaší zprávou byl odeslán.</p>
+	    {/if}
+    {/snippet}
+</div>
