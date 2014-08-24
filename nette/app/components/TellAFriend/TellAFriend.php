@@ -3,7 +3,7 @@ namespace CMS;
 
 use Nette,
 	Nette\Mail\Message,
-    Nette\Mail\SendmailMailer;
+	Nette\Mail\SendmailMailer;
 
 class TellAFriend extends Nette\Application\UI\Control {
 	
@@ -12,9 +12,9 @@ class TellAFriend extends Nette\Application\UI\Control {
 	public function render()
 	{	
 		$template = $this->template;
-	    $template->setFile(__DIR__ . '/tellafriend.latte');
+		$template->setFile(__DIR__ . '/tellafriend.latte');
 		$template->send = $this->send;
-	    $template->render();	
+		$template->render();	
 	}
 
 	public function createComponentSendMailForm()
@@ -22,13 +22,13 @@ class TellAFriend extends Nette\Application\UI\Control {
 		$this->redrawControl('tellafriend');
 
 		$form = new Nette\Application\UI\Form;
-        $form->setAction('?');
+		$form->setAction('?');
 		
 		$form->addText('mailto', 'Mail to')
 			 ->setAttribute('placeholder', 'od koho (e-mail)')
 			 ->setRequired('Zadejte prosím platný e-mail')
- 	      	 ->setType('email')
-             ->addRule($form::EMAIL, 'Zadejte prosím platný e-mail');
+			 ->setType('email')
+			 ->addRule($form::EMAIL, 'Zadejte prosím platný e-mail');
 
 		$form->addText('mailfrom', 'Mail from')
 			 ->setAttribute('placeholder', 'komu (e-mail)')
