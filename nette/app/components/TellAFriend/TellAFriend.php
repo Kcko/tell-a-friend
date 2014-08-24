@@ -24,17 +24,19 @@ class TellAFriend extends Nette\Application\UI\Control {
 		$form = new Nette\Application\UI\Form;
 		$form->setAction('?');
 		
-		$form->addText('mailto', 'Mail to')
-			 ->setAttribute('placeholder', 'od koho (e-mail)')
-			 ->setRequired('Zadejte prosím platný e-mail')
-			 ->setType('email')
-			 ->addRule($form::EMAIL, 'Zadejte prosím platný e-mail');
+		$form
+			->addText('mailto', 'Mail to')
+			->setAttribute('placeholder', 'od koho (e-mail)')
+			->setRequired('Zadejte prosím platný e-mail')
+			->setType('email')
+			->addRule($form::EMAIL, 'Zadejte prosím platný e-mail');
 
-		$form->addText('mailfrom', 'Mail from')
-			 ->setAttribute('placeholder', 'komu (e-mail)')
-			 ->setRequired('Zadejte prosím platný e-mail')
- 	      	 ->setType('email')
-             ->addRule($form::EMAIL, 'Zadejte prosím platný e-mail');
+		$form
+			->addText('mailfrom', 'Mail from')
+			->setAttribute('placeholder', 'komu (e-mail)')
+			->setRequired('Zadejte prosím platný e-mail')
+ 	      	->setType('email')
+            ->addRule($form::EMAIL, 'Zadejte prosím platný e-mail');
 
 		$form->addSubmit('send', 'odeslat e-mail');
         $form->onSuccess[] = $this->sendEmail;
