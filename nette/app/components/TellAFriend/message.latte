@@ -1,1 +1,8 @@
-zprava
+{include '../../templates/Email/@header.latte'}
+
+<h1>Upozornění na stránky <a href="{$_SERVER['HTTP_REFERER']}">www.automarkyzy.cz</a></h1>
+
+<p>Uživatel <strong>{$mailfrom}</strong> Vám zaslal upozornění na stránky <a href="{$_SERVER['HTTP_REFERER']}">www.automarkyzy.cz</a></p>
+<hr />
+<p>Tým OUT OF BOX</p>
+<p style="color:#757475">Tento e-mail byl vygenerován automaticky z www.out-of-box.eu</p>

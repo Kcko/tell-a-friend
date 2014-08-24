@@ -4,6 +4,11 @@
 	    {if !$send}
 		    <p>Informujte své přátele nebo známe o této stránce a pošlete jim e-mail s odkazem!</p>
 		    {form sendMailForm, class => ajax}
+		    	
+		    	<ul class="errors" n:if="$form->hasErrors()">
+        			<li n:foreach="$form->errors as $error">{$error}</li>
+				</ul>
+
 		    	{input mailto, class=>text-input}
 		    	{input mailfrom, class=>text-input}
 		    	{input send, class=>submit}
