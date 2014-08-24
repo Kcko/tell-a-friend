@@ -1,7 +1,7 @@
 <?php
 namespace CMS;
 
-use Nette,
+use	Nette,
 	Nette\Mail\Message,
 	Nette\Mail\SendmailMailer;
 
