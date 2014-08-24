@@ -1,4 +1,6 @@
 tell-a-friend
 =============
 
-Nette komponenta pro odeslání upozornění na URL ve které ji uživatel použije.
+Jednoduchá komponenta pro framework Nette která zajistí odeslání upozornění na URL ve které ji uživatel použije.
+
+
